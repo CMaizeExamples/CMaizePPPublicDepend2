@@ -10,7 +10,7 @@ set(
 include(get_cmaize)
 
 # Get dependencies
-cpp_find_or_build_dependency(
+cmaize_find_or_build_dependency(
     CMaizePublicDepend
     URL github.com/CMaizeExamples/CMaizePublicDepend
     BUILD_TARGET CMaizePublicDepend
@@ -23,7 +23,7 @@ cmaize_add_library(
     ${PROJECT_NAME}
     INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/include/cmaize_public_depend_2"
     SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/src/cmaize_public_depend_2"
-    DEPENDS CMaizePublicDepend::CMaizePublicDepend
+    DEPENDS CMaizePublicDepend
 )
 
 if (BUILD_TESTING)
