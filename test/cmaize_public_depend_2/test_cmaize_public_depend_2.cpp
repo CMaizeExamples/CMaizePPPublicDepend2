@@ -4,6 +4,6 @@
 
 TEST_CASE("cmaize_public_depend_2") {
     SECTION("does_cmaize_public_depend_2_work") {
-        REQUIRE(call_cmaize_public_depend_2() == 7);
+        REQUIRE(cmaize_public_depend_2::call_cmaize_public_depend_2() == 8);
     }
 }
