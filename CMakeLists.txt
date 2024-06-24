@@ -40,7 +40,7 @@ if (BUILD_TESTING)
         test_${PROJECT_NAME}
         SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}/test/cmaize_public_depend_2"
         INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/src/cmaize_public_depend_2"
-        DEPENDS Catch2 ${PROJECT_NAME}
+        DEPENDS Catch2::Catch2WithMain ${PROJECT_NAME}
     )
 endif()
 
